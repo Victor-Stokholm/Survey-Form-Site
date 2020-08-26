@@ -11,8 +11,9 @@
         <h1 id="title"> Survey form site </h1>
         <p id="description">Take the free test for self improvement</p>
     </div>
-
-    <form id="survey-Data"action="/Survey-Site-Data-Gathering">
+                        
+                    <!-- Name, Email and Number inputs -->
+    <form id="survey-form" action="/Survey-Site-Data-Gathering">
         <div class="survey-content">
             <label id="name-label" for="name">Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Enter your name here" required><br>
@@ -24,16 +25,65 @@
             <input type="text" id="number" name="number" placeholder="Enter your number here" required>
 
             <!-- add drop down option -->
+            <select name="empty-dropdown" id="dropdown">
+                <option value="whats your carrer">Whats your carrer</option>
+                <option value="opt 1">opt 1</option>
+                <option value="opt 2">opt 2</option>
+                <option value="opt 3">opt 3</option>
+                <option value="opt 4">opt 4</option>
+            </select>
 
             <!-- add radio-buttons -->
+            <fieldset>
+                <input type="radio" name="radio box 1" id="radio-box1">
+                <label for="radio-box1">radio box 1</label><br>
 
+                <input type="radio" name="radio box 2" id="radio-box2">
+                <label for="radio-box2">radio box 2</label><br>
+
+                <input type="radio" name="radio box 3" id="radio-box3">
+                <label for="radio-box3">radio box 3</label><br>
+            </fieldset>
             <!-- add drop down option -->
-
+            <select name="empty-dropdown" id="dropdown2">
+                <option value="whats your dream">Whats your carrer</option>
+                <option value="opt 1">opt 1</option>
+                <option value="opt 2">opt 2</option>
+                <option value="opt 3">opt 3</option>
+                <option value="opt 4">opt 4</option>
+            </select>
             <!-- checkbox data -->
+            <fieldset>
+                <input type="checkbox" name="checkbox 1" id="checkbox1">
+                <label for="checkbox1">checkbox 1</label><br>
+                
+                <input type="checkbox" name="checkbox 2" id="checkbox2">
+                <label for="checkbox2">checkbox 2</label><br>
+                
+                <input type="checkbox" name="checkbox 3" id="checkbox3">
+                <label for="checkbox3">checkbox 3</label><br>
+                
+                <input type="checkbox" name="checkbox 4" id="checkbox4">
+                <label for="checkbox4">checkbox 4</label><br>
+
+                <input type="checkbox" name="checkbox 5" id="checkbox5">
+                <label for="checkbox5">checkbox 5</label><br>
+
+                <input type="checkbox" name="checkbox 6" id="checkbox6">
+                <label for="checkbox6">checkbox 6</label><br>
+            </fieldset>
 
             <!-- text-area for extra comments -->
+            <div class="text-area">
+                <label for="comment-section">Any comments or suggestions?</label><br>
+                <textarea name="additional-comments" id="comment-section" cols="30" rows="10"></textarea>
+            </div>
 
+            <div class="submit-div">
+                <input type="submit" value="Submit" id="submit">
+            </div>
         </div>
     </form>
 </body>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>
